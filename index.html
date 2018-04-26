@@ -8,8 +8,12 @@
 		<header class="main-header">
 			<a class="header-logo"><img src="img/logo.svg" width="100" height="100" alt="Логотип «Device»"></a>
 			<ul class="user-navigation">
-				<li class="search"><!-- Форма --></li>
-				<li><a href="#">Войти</a></li>
+				<li class="search">
+					<form action="http://echo.htmlacademy.ru" method="get" class="main-search">
+						<input type="search" name="search">
+					</form>
+				</li>
+				<li class="login-enter"><a href="#">Войти</a></li>
 				<li><a href="#">Сравнить</a></li>
 				<li class="cart"><a href="#">Корзина</a></li>
 			</ul>
@@ -25,6 +29,7 @@
 
 		<main class="container">
 			<h1 class="visually-hidden">Магазин девайсов «Device»</h1>
+
 			<div class="slider">
 				<ul>
 					<li>
@@ -73,9 +78,9 @@
 						</table>
 					</li>
 				</ul>
-				<a class="slider-btn" href="#">1</a>
-				<a class="slider-btn" href="#">2</a>
-				<a class="slider-btn" href="#">3</a>
+				<button class="slider-btn" type="button">1</button>
+				<button class="slider-btn" type="button">2</button>
+				<button class="slider-btn" type="button">3</button>
 			</div>
 
 			<section class="assortment">
@@ -176,9 +181,27 @@
 		</section>
 
 		<section class="write-us-popup">
-			<!-- Формы -->
-			<a class="btn" href="#">Отправить</a>
-			<button class="close-btn">Закрыть</button>
+			<h2 class="visually-hidden">Напишите нам</h2>
+			<form action="http://echo.htmlacademy.ru">
+				<label>Ваше имя:
+					<input type="text" name="name" placeholder="Имя Фамилия">
+				</label>
+				<label>Ваш e-mail:
+					<input type="text" name="email" placeholder="email@example.com">
+				</label>
+				<label>Текст письма:
+					<textarea>
+						В свободной форме
+					</textarea>
+				</label>
+				<button class="btn" type="submit">Отправить</button>
+			</form>
+			<button class="close-btn" type="button">Закрыть</button>
+		</section>
+
+		<section class="map-popup">
+			<img src="img/map-big.jpg" width="960" height="559" alt="Адрес">
+			<button class="close-btn" type="button">Закрыть</button>
 		</section>
 	</body>
 </html>
